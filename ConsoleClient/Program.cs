@@ -10,7 +10,12 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            Console.Write("hello World!");
+            Console.WriteLine("Hello!");
+            int baseNumber = 4;
+            int powerNumber = 4;
+            var x = new SupposedlyTestableClass();
+            var result = x.SimplestCaseEver(baseNumber, powerNumber);
+            Console.WriteLine("{0} ^ {1} = {2}", baseNumber, powerNumber, result);
             Console.ReadLine();
         }
     }
